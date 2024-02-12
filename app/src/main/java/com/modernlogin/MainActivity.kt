@@ -22,6 +22,7 @@ import androidx.compose.foundation.text.KeyboardActions
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Lock
+import androidx.compose.material.icons.filled.MailOutline
 import androidx.compose.material3.Divider
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
@@ -155,7 +156,11 @@ fun LoginScreen(modifier: Modifier = Modifier) {
                 .layoutId("passwordField")
                 .clip(RoundedCornerShape(10.dp)),
             placeholder = {
-                Text("Password")
+                Icon(
+                    imageVector = Icons.Filled.MailOutline,
+                    contentDescription = "Email Icon"
+                )
+                Text("Password", modifier = Modifier.padding(start = 30.dp))
             },
             colors = TextFieldDefaults.textFieldColors(
                 focusedIndicatorColor = Color.Transparent,
