@@ -129,7 +129,11 @@ fun LoginScreen(modifier: Modifier = Modifier) {
                 .layoutId("emailField")
                 .clip(RoundedCornerShape(10.dp)),
             placeholder = {
-                Text("Email")
+                Icon(
+                    imageVector = Icons.Filled.MailOutline,
+                    contentDescription = "Email Icon"
+                )
+                Text("Email", modifier = Modifier.padding(start = 30.dp))
             },
             colors = TextFieldDefaults.textFieldColors(
                 focusedIndicatorColor = Color.Transparent,
