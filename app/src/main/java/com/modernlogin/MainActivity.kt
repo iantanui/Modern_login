@@ -161,7 +161,7 @@ fun LoginScreen(modifier: Modifier = Modifier) {
                 .clip(RoundedCornerShape(10.dp)),
             placeholder = {
                 Icon(
-                    imageVector = Icons.Filled.MailOutline,
+                    imageVector = Icons.Filled.Lock,
                     contentDescription = "Password Icon"
                 )
                 Text("Password", modifier = Modifier.padding(start = 30.dp))
